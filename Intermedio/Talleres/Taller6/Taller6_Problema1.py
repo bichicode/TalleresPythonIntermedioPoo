@@ -12,6 +12,8 @@ Construya un programa que de acuerdo a la temperatura ingresada nos diga a que c
 pertenece.
 """
 
+# ----------------------Clase Horno----------------------------------------------------------
+
 class Horno:
 
     def __init__(self, grados):
@@ -36,12 +38,21 @@ class Horno:
 
         return self.temperatura
 
-print("\nPrograma de temperaturas\n")
 
-grad = int(input("Ingrese a cuantos grados esta el horno "))
+# --------------------------------------------------------------------------------------------------------
 
-instancia = Horno(grad)
 
-print("Pertenece a la clasificacion: ", instancia.tomartemperatura())
+try:
+
+    print("\nPrograma de temperaturas\n")
+
+    grad = int(input("Ingrese a cuantos grados esta el horno "))
+
+    instancia = Horno(grad)
+
+    print("Pertenece a la clasificacion: ", instancia.tomartemperatura())
+
+except:
+    print("\nError de Valor ⚑ \n\n\nPara mas informacion consultar con\nBichicode🍑")
 
 
